@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Компьютерный магазин — Визитка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Комп'ютерний магазин "НЕО"</h1>
+    <p>Кращі комп'ютери та комплектуючі</p>
+</header>
+
+<mennu>
+    <a href="#about">Про нас</a>
+    <a href="#products">Товари</a>
+    <a href="#contacts">Контакти</a>
+</mennu>
+
+<section class="hero">
+    <h1>Вітаемо на сайті магазину НЕО!</h1>
+    <p>Ми підберемо техніку під будь-які задачи</p>
+</section>
+
+<section id="about" class="section">
+    <h2>Про нас</h2>
+    <p>Ми — сучасний магазин комп'ютерної техніки. У нас вы знайдете ноутбуки, ПК, комплектуючі, периферію та аксесуари за доступними цінами.</p>
+    <img src="img1.png">
+    <img src="img1.png">
+    <img src="img1.png">
+    <img src="img1.png">
+</section>
+
+<section id="products" class="section">
+    <h2>Наші товари</h2>
+    <div class="products">
+        <div class="card" id="nout">
+            <img src="noutimg.png" alt="Ноутбук" />
+            <h3>Ноутбуки</h3>
+            <p>Потужні та стильні ноутбуки для роботи та ігор.</p>
+        </div>
+        <div class="card" id="pc">
+            <img src="pc.png" alt="ПК" />
+            <h3>Стаціонарні ПК</h3>
+            <p>Висока продуктивність для будь-яких задач.</p>
+        </div>
+        <div class="card" id="other">
+            <img src="other.png" alt="Комплектуючі"/>
+            <h3>Комплектуючі</h3>
+            <p>Відеокарти, процесори, пам'ять та інше.</p>
+        </div>
+    </div>
+
+    <div class="products2">
+        <div class="card" id="all">
+            <h3>Усі товари</h3>
+        </div>
+    </div>
+
+</section>
+
+<script>
+    document.getElementById('nout').onclick = function() {
+        window.location.href = 'nout.html';
+    }
+    document.getElementById('pc').onclick = function() {
+        window.location.href = 'pc.html';
+    }
+    document.getElementById('other').onclick = function() {
+        window.location.href = 'other.html';
+    }
+    document.getElementById('all').onclick = function() {
+        window.location.href = 'all.html';
+    }
+</script>
+
+<section id="contacts" class="section">
+    <h2>Контакти</h2>
+    <p><strong>Адреса:</strong> м. Полтава, ул. Сінна 32</p>
+    <p><strong>Телефон:</strong> +38 (095) 869-85-77</p>
+    <p><strong>Часи роботи:</strong></p>
+    <p>Пн-Чт: 9:00-17:00</p>
+    <p>Пт: 9:00-16:00</p>
+    <p>Сб-Нд: Закрито</p>
+</section>
+
+<footer>
+    <p>© 2025 ТОВ «Офіс Техно» Усі права захищені.</p>
+</footer>
+
+</body>
+</html>
